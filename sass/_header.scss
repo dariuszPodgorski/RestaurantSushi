@@ -1,1 +1,45 @@
 @import 'nav';
+
+
+.site-header {
+    height: 100vh;
+    background-image: url('/images/header/header_small.jpg');
+    @include background(left, no-repeat, center);
+    @include flexBox(column);
+
+
+    & h2 {
+        text-align: center;
+        color: $firstFontColor;
+        padding-top: 20px;
+        line-height: 40px;
+    }
+
+    .heading-bold {
+        font-weight: bold;
+    }
+
+
+}
+
+.site-header_logo {
+    margin: 0 auto;
+}
+
+.site-header_logo-img {
+    width: 110px;
+    height: 90px;
+}
+
+.site-header_btn {
+    margin: 20px auto;
+    width: 180px;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid $btnFirstColor;
+    background-color: $btnFirstColor;
+    cursor: pointer;
+    color: $secondFontColor;
+    text-transform: uppercase;
+
+}
